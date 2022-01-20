@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 :root {
     --top-header-top-position: 5%;
     --header-height: 3rem;
     --nav-width: 68px;
-    --first-color: #4723D9;
-    --first-color-light: #AFA5D9;
-    --white-color: #F7F6FB;
-    --purple-color: purple;
-    --body-font: 'Nunito', sans-serif;
+    --primary-color: var(--bs-primary);
+    --secondary-color: var(--bs-secondary);
+    --white-color: #FFFFFF;
+    --body-font: 'Montserrat', sans-serif;
     --normal-font-size: 1rem;
     --z-fixed: 100;
     --z-topbar: 101;
@@ -46,7 +45,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: var(--purple-color);
+    background-color: var(--secondary-color);
     z-index: var(--z-topbar);
     transition: .5s;
     text-align: center !important;
@@ -62,13 +61,13 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: var(--white-color);
+    background-color: var(--primary-color);
     z-index: var(--z-fixed);
     transition: .5s
 }
 
 .header_toggle {
-    color: var(--first-color);
+    color: var(--primary-color);
     font-size: 1.5rem;
     cursor: pointer
 }
@@ -92,7 +91,7 @@ a {
     left: -30%;
     width: var(--nav-width);
     height: 100vh;
-    background-color: var(--first-color);
+    background-color: var(--primary-color);
     padding: .5rem 1rem 0 0;
     transition: .5s;
     z-index: var(--z-fixed)
@@ -103,7 +102,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden
+    overflow: hidden;
+    margin-top: 5rem;
 }
 
 .nav_logo,
@@ -131,7 +131,7 @@ a {
 
 .nav_link {
     position: relative;
-    color: var(--first-color-light);
+    color: var(--white-color);
     margin-bottom: 1.5rem;
     transition: .3s
 }
@@ -141,7 +141,15 @@ a {
 }
 
 .nav_icon {
-    font-size: 1.25rem
+    font-size: 1.25rem;
+}
+
+.secondary-bs-color {
+    color: var(--bs-secondary)
+}
+
+.white-bs-color {
+    color: var(--white-colo)
 }
 
 .show {
