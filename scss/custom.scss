@@ -6,11 +6,15 @@
 $primary: #121523;
 $secondary: #85248d;
 $opacity-white: rgba(255, 255, 255, 0.45);
+$field-grey: #6a6a6f;
+
 $modal-bg: $primary;
+$input-placeholder-color: $opacity-white;
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
+  "field-grey": $field-grey,
   "opacity-white": $opacity-white,
 );
 
@@ -32,6 +36,7 @@ $spacers: (
 
 $position-values: (
   0: 0%,
+  half: 0.5%,
   1: 1%,
   2: 2%,
   3: 3%,
@@ -373,8 +378,5 @@ $utilities: map-merge(
   )
 );
 
+//finally import full bs scss
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-// merge variable mappings
-
-// Then add additional custom code here

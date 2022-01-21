@@ -16,7 +16,7 @@
 
     <link rel="icon" href="./img/icon.png" />
 
-    <title>Basic - Bootstrap 5 with Gulp 4</title>
+    <title>Vegaz.bet</title>
 </head>
 
 <body id="body-pd" style="background: url('./img/Home e Roleta.png') no-repeat center center fixed; background-size: cover;">
@@ -49,44 +49,32 @@
     </div>
     <div class="r-navbar invisible" id="nav-bar-chat">
         <div id="invisible-toggle-div" class="invisible">
+            
             <button id="close-chat" type="button" class="position-absolute top-8 start-10 btn-close btn-close-white" aria-label="Close"></button>
-            <button type="button" class="position-absolute top-8 end-10 white-bs-color fw-bold btn btn-primary"><span class="text-nowrap">Vegaz Chat</span></button>
+            <button type="button" class="position-absolute top-7 end-10 white-bs-color fw-bold btn btn-primary"><span class="text-nowrap">Vegaz Chat</span></button>
             
             <div class="bg-primary text-center position-absolute bottom-2 end-3 w-94 h-5">
                 <div class="input-group mb-3">
-                    <input type="text" class="chat-font form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="chat-font btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                    <input type="text" class="chat-font form-control" placeholder="Your message" aria-label="Message">
+                    <button class="chat-font btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
                 </div>
             </div>
 
-            <div id="chatContainer" class="chat-font d-flex flex-column bd-highlight position-absolute top-13 end-5 w-90 h-78">
+            <div id="chatContainer" class="chat-font d-flex flex-column bd-highlight position-absolute top-15 end-5 w-90 h-75">
                     
 
-                    <div class="p-2 bd-highlight mb-1">
-                        <span class="bg-secondary">texto aqui</span>
-                    </div>
-                    <div class="bg-secondary border border-secondary p-2 bd-highlight mb-1">Flex item 2</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 3</div>
+                <div class="card bg-field-grey text-white mb-1">
+                    <span class="pt-1 pb-1 ps-1 pe-1">Mensagem do usuário aqui</span>
+                </div>
 
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 1</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 2</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 3</div>
+                <div class="card bg-field-grey text-white mb-1">
+                    <span class="pt-1 pb-1 ps-1 pe-1">Mensagem do usuário aqui</span>
+                </div>
 
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 1</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 2</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 3</div>
-
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 1</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 2</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 3</div>
-
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 1</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 2</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 3</div>
-
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 1</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 2</div>
-                    <div class="bg-secondary p-2 bd-highlight mb-1">Flex item 3</div>
+                <div class="card bg-field-grey text-white mb-1">
+                    <span class="pt-1 pb-1 ps-1 pe-1">Mensagem do usuário aqui</span>
+                </div>
+                    
                     
             </div>
             
@@ -122,8 +110,8 @@
                             Login to Vegaz
                         </div>
                         <div class="text-center p-2 bd-highlight">
-                            <input class="bg-primary text-white form-control mb-3" type="text" placeholder="Username or Email" id="login-username" aria-label="Username">
-                            <input class="bg-primary text-white form-control mb-3" type="password" placeholder="Password" id="login-password" aria-label="Password">
+                            <input class="bg-field-grey text-white border-0 form-control mb-3" type="text" placeholder="Username or Email" id="login-username" aria-label="Username">
+                            <input class="bg-field-grey text-white border-0 form-control mb-3" type="password" placeholder="Password" id="login-password" aria-label="Password">
                         </div>
                         <div class="text-center p-2 bd-highlight">
                             <button type="button" class="white-bs-color btn btn-primary" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#recover-modal">Forgot your password?</button>
@@ -156,7 +144,7 @@
                             We'll send you an email with instructions to recover your account
                         </div>
                         <div class="text-center p-2 bd-highlight">
-                            <input class="bg-primary text-white form-control mb-3" type="email" placeholder="Email" id="recover-email" >
+                            <input class="bg-field-grey text-white border-0 form-control mb-3" type="email" placeholder="Email" id="recover-email" >
                         </div>
                     </div>
                 </div>
@@ -211,13 +199,13 @@
                             <img src="" alt="Logo Vegaz">
                         </div>
                         <div class="text-center fw-bold p-2 bd-highlight">
-                            Register at Vegaz
+                            Create your Vegaz account
                         </div>
                         <div class="text-center p-2 bd-highlight">
-                            <input class="bg-primary text-white form-control mb-3" type="email"  placeholder="Email" id="register-email" >
-                            <input class="bg-primary text-white form-control mb-3" type="text" placeholder="Username" id="register-username" aria-label="Username">
-                            <input class="bg-primary text-white form-control mb-3" type="password" placeholder="Password" id="register-password" aria-label="Password">
-                            <input class="bg-primary text-white form-control mb-3" type="password" placeholder="Password repeat" id="register-password-repeat" aria-label="Password repeat">
+                            <input class="bg-field-grey text-white border-0 form-control mb-3" type="email"  placeholder="Email" id="register-email" >
+                            <input class="bg-field-grey text-white border-0 form-control mb-3" type="text" placeholder="Username" id="register-username" aria-label="Username">
+                            <input class="bg-field-grey text-white border-0 form-control mb-3" type="password" placeholder="Password" id="register-password" aria-label="Password">
+                            <input class="bg-field-grey text-white border-0 form-control mb-3" type="password" placeholder="Password repeat" id="register-password-repeat" aria-label="Password repeat">
                         </div>
                     </div>
                 </div>
