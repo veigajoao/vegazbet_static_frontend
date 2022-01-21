@@ -25,10 +25,9 @@
     </header>
     <header class="header" id="header">
         <div class="header_toggle" id="toggle-up"> <i class="fas fa-bars secondary-bs-color" id="header-toggle"></i></div>
-
         <div class="me-5">
-            <a class=" white-bs-colorbtn btn-secondary-outline me-4" href="#" role="button" style="color: white; font-weight: bold;">Login</a>
-            <a class="white-bs-color btn btn-secondary" href="#" role="button" style="color: white; font-weight: bold">Register</a>
+            <button type="button" class="white-bs-color fw-bold btn btn-primary me-4" data-bs-toggle="modal" data-bs-target="#login-modal">Login</button>
+            <button type="button" class="white-bs-color fw-bold btn btn-secondary" data-bs-toggle="modal" data-bs-target="#registration-modal">Register</button>
         </div>
     </header>
     <div class="l-navbar" id="nav-bar">
@@ -41,8 +40,8 @@
                     <a href="#" class="nav_link"> <i class="fas fa-dice nav_icon secondary-bs-color"></i> <span class="nav_name">Dice</span> </a>
                     <a href="#" class="nav_link"> <i class="fas fa-coins nav_icon secondary-bs-color"></i> <span class="nav_name">Heads or Tails</span> </a>
                     <hr class="bg-white border-2 border-top border-white">
-                    <a href="#" class="nav_link"> <i class="fas fa-hand-holding-usd nav_icon secondary-bs-color"></i> <span class="nav_name">Deposit /<br> Withdrawal</span> </a>
-                    <a href="#" class="nav_link"> <i class="far fa-question-circle nav_icon secondary-bs-color"></i> <span class="nav_name">Help</span> </a>
+                    <a href="#" class="nav_link"> <i class="fas fa-hand-holding-usd nav_icon white-bs-color"></i> <span class="nav_name">Deposit /<br> Withdrawal</span> </a>
+                    <a href="#" class="nav_link"> <i class="far fa-question-circle nav_icon white-bs-color"></i> <span class="nav_name">Help</span> </a>
                 </div>
             </div>
             
@@ -53,7 +52,73 @@
         <h4>Main Components</h4>
     </div>
     <!--Container Main end-->
-    
+
+    <!-- Login modal -->
+    <div class="modal fade modal-fullscreen-sm-down" id="login-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog bg-primary">
+            <div class="bg-primary text-white border border-4 border-secondary modal-content">
+                <div class="border-bottom border-4 border-secondary modal-header">
+                    <div class="mx-auto">
+                        <button type="button" class="white-bs-color fw-bold btn btn-primary">Login</button>
+                        <button type="button" class="white-bs-color fw-bold opacity-50 btn btn-primary" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#registration-modal">Register</button>
+                    </div>
+                    <button type="button" class="position-absolute end-5 btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="text-center p-2 bd-highlight">
+                            <img src="" alt="Logo Vegaz">
+                        </div>
+                        <div class="text-center fw-bold p-2 bd-highlight">
+                            Login to Vegaz
+                        </div>
+                        <div class="text-center p-2 bd-highlight">
+                            <input class="bg-primary text-white form-control mb-3" type="text" placeholder="Username or Email" id="login-username" aria-label="Username">
+                            <input class="bg-primary text-white form-control mb-3" type="password" placeholder="Password" id="login-password" aria-label="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top border-4 border-secondary modal-footer">
+                    <button type="button" class="mx-auto btn btn-secondary" data-bs-dismiss="modal">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration modal -->
+    <div class="modal fade modal-fullscreen-sm-down" id="registration-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog bg-primary">
+            <div class="bg-primary text-white border border-4 border-secondary modal-content">
+                <div class="border-bottom border-4 border-secondary modal-header">
+                    <div class="mx-auto">
+                        <button type="button" class="white-bs-color fw-bold opacity-50 btn btn-primary" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#login-modal">Login</button>
+                        <button type="button" class="white-bs-color fw-bold btn btn-primary">Register</button>
+                    </div>
+                    <button type="button" class="position-absolute end-5 btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="text-center p-2 bd-highlight">
+                            <img src="" alt="Logo Vegaz">
+                        </div>
+                        <div class="text-center fw-bold p-2 bd-highlight">
+                            Register at Vegaz
+                        </div>
+                        <div class="text-center p-2 bd-highlight">
+                            <input class="bg-primary text-white form-control mb-3" type="email"  placeholder="Email" id="register-email" >
+                            <input class="bg-primary text-white form-control mb-3" type="text" placeholder="Username" id="register-username" aria-label="Username">
+                            <input class="bg-primary text-white form-control mb-3" type="password" placeholder="Password" id="register-password" aria-label="Password">
+                            <input class="bg-primary text-white form-control mb-3" type="password" placeholder="Password repeat" id="register-password-repeat" aria-label="Password repeat">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top border-4 border-secondary modal-footer">
+                    <button type="button" class="mx-auto btn btn-secondary" data-bs-dismiss="modal">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

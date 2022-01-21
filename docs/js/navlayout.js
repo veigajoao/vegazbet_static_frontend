@@ -7,16 +7,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
             headerpd = document.getElementById(headerId),
             toggleup = document.getElementById("toggle-up")
 
-        console.log(toggle);
-        console.log(nav);
-        console.log(bodypd);
-        console.log(headerpd);
-
         // Validate that all variables exist
         if (toggle && nav && bodypd && headerpd) {
             toggleup.addEventListener('click', () => {
                 // show navbar
-                nav.classList.toggle('show')
+                nav.classList.toggle('show-left-nav')
                     // change icon
                 toggle.classList.toggle('fa-times')
                     // add padding to body
@@ -24,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     // add padding to header
                 headerpd.classList.toggle('body-pd')
             })
-            console.log("EXECUTED");
         }
         
     }
@@ -41,7 +35,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     }
     linkColor.forEach(l => l.addEventListener('click', colorLink))
-
-    console.log("LOADED");
-    // Your code to run since DOM is loaded and ready
+    
 });
