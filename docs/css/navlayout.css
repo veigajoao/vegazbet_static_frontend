@@ -6,6 +6,8 @@
     --chat-width: 100px;
     --primary-color: var(--bs-primary);
     --secondary-color: var(--bs-secondary);
+    --field-gray: var(--bs-field-grey);
+    --field-grey-transparency: var(--bs-field-grey-transparency);
     --white-color: var(--bs-white);
     --body-font: 'Montserrat', sans-serif;
     --normal-font-size: 1rem;
@@ -213,6 +215,16 @@
     border-radius: 50px;
     text-align: center;
     vertical-align: middle;
+}
+
+.coin-dropdown-item {
+    color: var(--white-color);
+}
+
+.coin-dropdown-item:hover {
+    color: var(--secondary-color);
+    background-color: var(--field-grey-transparency);
+    font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
