@@ -11,29 +11,57 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (toggle && nav && bodypd && headerpd) {
             toggleup.addEventListener('click', () => {
                 // show navbar
-                nav.classList.toggle('show-left-nav')
+                nav.classList.toggle('show-left-nav');
                     // change icon
-                toggle.classList.toggle('fa-times')
+                toggle.classList.toggle('fa-times');
                     // add padding to body
-                bodypd.classList.toggle('body-pd')
+                bodypd.classList.toggle('body-menu-pd');
                     // add padding to header
-                headerpd.classList.toggle('body-pd')
-            })
+                headerpd.classList.toggle('body-menu-pd');
+            });
         }
         
     }
 
-    showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+    showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header');
+
 
     /*===== LINK ACTIVE =====*/
-    const linkColor = document.querySelectorAll('.nav_link')
+    const linkColor = document.querySelectorAll('.nav_link');
 
     function colorLink() {
         if (linkColor) {
-            linkColor.forEach(l => l.classList.remove('active'))
-            this.classList.add('active')
+            linkColor.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
         }
     }
-    linkColor.forEach(l => l.addEventListener('click', colorLink))
+    linkColor.forEach(l => l.addEventListener('click', colorLink));
+
+    // show chat
+    const showChat = (toggleId, navId, bodyId, headerId) => {
+        const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId),
+            bodypd = document.getElementById(bodyId),
+            headerpd = document.getElementById(headerId)
+
+        // Validate that all variables exist
+        if (toggle && nav && bodypd && headerpd) {
+            const toggleFunc = () => {
+                // show navbar
+                nav.classList.toggle('invisible');
+                nav.classList.toggle('show-right-nav');
+                    // change icon
+                toggle.classList.toggle('invisible');
+                    // add padding to body
+                bodypd.classList.toggle('body-chat-pd');
+                    // add padding to header
+                headerpd.classList.toggle('body-chat-pd');
+            }
+            toggle.addEventListener('click', toggleFunc);
+        }
+        
+    }
+
+    showChat('chatButton', 'nav-bar-chat', 'body-pd', 'header');
     
 });

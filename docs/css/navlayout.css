@@ -3,6 +3,7 @@
     --top-header-top-position: 5%;
     --header-height: 3rem;
     --nav-width: 68px;
+    --chat-width: 68px;
     --primary-color: var(--bs-primary);
     --secondary-color: var(--bs-secondary);
     --white-color: #FFFFFF;
@@ -80,6 +81,19 @@
     z-index: var(--z-fixed)
 }
 
+.r-navbar {
+    position: fixed;
+    top: 0;
+    right: 0%;
+    width: var(--chat-width);
+    height: 100vh;
+    background-color: var(--primary-color);
+    padding: 1rem 0 0 1rem;
+    transition: .5s;
+    z-index: var(--z-fixed);
+    padding: 1rem 0 0 1rem;
+}
+
 .nav {
     height: 100%;
     display: flex;
@@ -140,8 +154,16 @@
     left: 0
 }
 
-.body-pd {
-    padding-left: calc(var(--nav-width) + 1rem)
+.show-right-nav {
+    width: 100%;
+}
+
+.body-menu-pd {
+    padding-left: calc(var(--nav-width) + 1rem);
+}
+
+.body-chat-pd {
+    padding-right: calc(var(--chat-width) + 1rem);
 }
 
 .active {
@@ -161,11 +183,19 @@
     height: 100vh
 }
 
+.float-icon-chat {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 @media screen and (min-width: 768px) {
-    body {
-        margin: calc(var(--header-height) + 1rem) 0 0 0;
-        padding-left: calc(var(--nav-width) + 2rem)
-    }
     .header {
         height: calc(var(--header-height) + 1rem);
         padding: 0 2rem 0 calc(var(--nav-width) + 2rem)
@@ -181,10 +211,21 @@
         left: 0;
         padding: 1rem 1rem 0 0
     }
+    .r-navbar {
+        right: 0;
+        padding: 1rem 0 0 1rem;
+        width: var(--chat-width);
+    }
     .show-left-nav {
         width: calc(var(--nav-width) + 156px)
     }
-    .body-pd {
-        padding-left: calc(var(--nav-width) + 188px)
+    .show-right-nav {
+        width: calc(var(--nav-width) + 156px)
+    }
+    .body-menu-pd {
+        padding-left: calc(var(--nav-width) + 188px);   
+    }
+    .body-chat-pd {
+        padding-right: calc(var(--nav-width) + 156px)
     }
 }
