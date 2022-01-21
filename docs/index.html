@@ -48,37 +48,42 @@
         </nav>
     </div>
     <div class="r-navbar invisible" id="nav-bar-chat">
-        <div id="invisible-toggle-div" class="invisible">
-            
-            <button id="close-chat" type="button" class="position-absolute top-8 start-10 btn-close btn-close-white" aria-label="Close"></button>
-            <button type="button" class="position-absolute top-7 end-10 white-bs-color fw-bold btn btn-primary"><span class="text-nowrap">Vegaz Chat</span></button>
-            
-            <div class="bg-primary text-center position-absolute bottom-2 end-3 w-94 h-5">
-                <div class="input-group mb-3">
-                    <input type="text" class="chat-font form-control" placeholder="Your message" aria-label="Message">
-                    <button class="chat-font btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
+
+        <div id="invisible-toggle-div" class="container mb-2 invisible">
+            <div class="row h-20 mb-1">
+                <button id="close-chat" type="button" class="position-absolute top-8 start-10 btn-close btn-close-white" aria-label="Close"></button>
+                <button type="button" class="w-50 position-absolute top-7 end-10 white-bs-color fw-bold btn btn-primary"><span class="text-nowrap">Vegaz Chat</span></button>
+            </div>
+
+            <div class="row h-60">
+                <div id="chatContainer" class="chat-font d-flex flex-column bd-highlight position-absolute top-15 end-5 w-90 h-75">
+                    
+                    <div class="card bg-field-grey text-white mb-1">
+                        <span class="pt-1 pb-1 ps-1 pe-1">Mensagem do usuário aqui</span>
+                    </div>
+    
+                    <div class="card bg-field-grey text-white mb-1">
+                        <span class="pt-1 pb-1 ps-1 pe-1">Mensagem do usuário aqui</span>
+                    </div>
+    
+                    <div class="card bg-field-grey text-white mb-1">
+                        <span class="pt-1 pb-1 ps-1 pe-1">Mensagem do usuário aqui</span>
+                    </div>
+                        
                 </div>
             </div>
 
-            <div id="chatContainer" class="chat-font d-flex flex-column bd-highlight position-absolute top-15 end-5 w-90 h-75">
-                    
-
-                <div class="card bg-field-grey text-white mb-1">
-                    <span class="pt-1 pb-1 ps-1 pe-1">Mensagem do usuário aqui</span>
+            <div class="row h-10">
+                <div class="bg-primary text-center position-absolute bottom-2 end-3 w-94 h-5">
+                    <div class="input-group mb-3">
+                        <input type="text" class="chat-font form-control" placeholder="Your message" aria-label="Message">
+                        <button class="chat-font btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
+                    </div>
                 </div>
-
-                <div class="card bg-field-grey text-white mb-1">
-                    <span class="pt-1 pb-1 ps-1 pe-1">Mensagem do usuário aqui</span>
-                </div>
-
-                <div class="card bg-field-grey text-white mb-1">
-                    <span class="pt-1 pb-1 ps-1 pe-1">Mensagem do usuário aqui</span>
-                </div>
-                    
-                    
             </div>
-            
+
         </div>
+
     </div>
     <!--Container Main start-->
     <div class="height-100">
