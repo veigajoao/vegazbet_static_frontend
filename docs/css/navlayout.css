@@ -176,11 +176,6 @@
     color: var(--white-color);
 }
 
-.chat-send-button {
-    bottom: 2vh;
-    bottom: calc(var(--vh, 1vh) * 2);
-}
-
 #chatContainer {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
