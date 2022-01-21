@@ -65,7 +65,7 @@
                     <button type="button" class="position-absolute end-5 btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="d-flex flex-column bd-highlight mb-3">
+                    <div class="d-flex flex-column bd-highlight">
                         <div class="text-center p-2 bd-highlight">
                             <img src="" alt="Logo Vegaz">
                         </div>
@@ -76,10 +76,70 @@
                             <input class="bg-primary text-white form-control mb-3" type="text" placeholder="Username or Email" id="login-username" aria-label="Username">
                             <input class="bg-primary text-white form-control mb-3" type="password" placeholder="Password" id="login-password" aria-label="Password">
                         </div>
+                        <div class="text-center p-2 bd-highlight">
+                            <button type="button" class="white-bs-color btn btn-primary" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#recover-modal">Forgot your password?</button>
+                        </div>
                     </div>
                 </div>
                 <div class="border-top border-4 border-secondary modal-footer">
                     <button type="button" class="mx-auto btn btn-secondary" data-bs-dismiss="modal">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recover password modal -->
+    <div class="modal fade modal-fullscreen-sm-down" id="recover-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog bg-primary">
+            <div class="bg-primary text-white border border-4 border-secondary modal-content">
+                <div class="border-bottom border-4 border-secondary modal-header">
+                    <div class="mx-auto">
+                        <button type="button" class="white-bs-color fw-bold btn btn-primary">Recover your password</button>
+                    </div>
+                    <button type="button" class="position-absolute end-5 btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="text-center p-2 bd-highlight">
+                            <img src="" alt="Logo Vegaz">
+                        </div>
+                        <div class="text-center fw-bold p-2 bd-highlight">
+                            We'll send you an email with instructions to recover your account
+                        </div>
+                        <div class="text-center p-2 bd-highlight">
+                            <input class="bg-primary text-white form-control mb-3" type="email" placeholder="Email" id="recover-email" >
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top border-4 border-secondary modal-footer">
+                    <button type="button" class="mx-auto btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#recover-confirmation-modal">Recover password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recover password confirmation modal -->
+    <div class="modal fade modal-fullscreen-sm-down" id="recover-confirmation-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog bg-primary">
+            <div class="bg-primary text-white border border-4 border-secondary modal-content">
+                <div class="border-bottom border-4 border-secondary modal-header">
+                    <div class="mx-auto text-center fw-bold">
+                        Recover your password
+                    </div>
+                    <button type="button" class="position-absolute end-5 btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="text-center p-2 bd-highlight">
+                            <img src="" alt="Logo Vegaz">
+                        </div>
+                        <div class="text-center p-2 bd-highlight">
+                            You'll receive an email shortly with instructions to recover your password. Check your inbox!
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top border-4 border-secondary modal-footer">
+                    <button type="button" class="mx-auto btn btn-secondary" data-bs-dismiss="modal">Understood</button>
                 </div>
             </div>
         </div>
@@ -113,7 +173,35 @@
                     </div>
                 </div>
                 <div class="border-top border-4 border-secondary modal-footer">
-                    <button type="button" class="mx-auto btn btn-secondary" data-bs-dismiss="modal">Register</button>
+                    <button type="button" class="mx-auto btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registration-confirmation-modal">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration confirmation modal -->
+    <div class="modal fade modal-fullscreen-sm-down" id="registration-confirmation-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog bg-primary">
+            <div class="bg-primary text-white border border-4 border-secondary modal-content">
+                <div class="border-bottom border-4 border-secondary modal-header">
+                    <div class="mx-auto text-center fw-bold">
+                        Welcome to Vegaz
+                    </div>
+                    <button type="button" class="position-absolute end-5 btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="text-center p-2 bd-highlight">
+                            <img src="" alt="Logo Vegaz">
+                        </div>
+                        <div class="text-center p-2 bd-highlight">
+                            You're now part of the best online gaming casino community!
+                            Let's play and good luck!
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top border-4 border-secondary modal-footer">
+                    <button type="button" class="mx-auto btn btn-secondary" data-bs-dismiss="modal">Start playing!</button>
                 </div>
             </div>
         </div>

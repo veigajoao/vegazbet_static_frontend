@@ -18,10 +18,6 @@
     box-sizing: border-box
 }
 
-body {
-
-}
-
 .top-header {
     width: 100%;
     height: var(--top-header-top-position);
