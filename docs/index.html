@@ -20,17 +20,19 @@
 </head>
 
 <body id="body-pd" style="background: url('./img/Home e Roleta.png') no-repeat center center fixed; background-size: cover;">
+    <div id="color-overlay"></div>
     <header class="top-header align-middle">
         <div class="mx-auto"></div>
     </header>
     <header class="header" id="header">
 
         <div class="d-flex">
-            <div class="header_toggle" id="toggle-up"> <i class="fas fa-bars secondary-bs-color" id="header-toggle"></i></div>
-            <img class="w-5 h-auto" src="./img/Logo Vegaz Bet MOEDA.png" alt="">
+            <div class="header_toggle me-3" id="toggle-up"> <i class="fas fa-bars secondary-bs-color" id="header-toggle"></i></div>
+            <img style="width: 50px;" class="h-auto me-1 d-none d-sm-flex" src="./img/Logo Vegaz Bet MOEDA.png" alt="">
+            <img style="width: 120px;" class="h-auto d-none d-sm-flex" src="./img/Logo Vegaz Bet ESCRITA.png" alt="">
         </div>
 
-        <div id="nav-buttons" class="me-5 d-sm-flex">
+        <div id="nav-buttons" class="d-sm-flex">
             <button type="button" class="white-bs-color fw-bold btn btn-primary me-4" data-bs-toggle="modal" data-bs-target="#login-modal">Login</button>
             <button type="button" class="white-bs-color fw-bold btn btn-secondary" data-bs-toggle="modal" data-bs-target="#registration-modal">Register</button>
         </div>
