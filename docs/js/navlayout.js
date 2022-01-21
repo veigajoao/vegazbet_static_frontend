@@ -42,12 +42,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const toggle = document.getElementById(toggleId),
             nav = document.getElementById(navId),
             bodypd = document.getElementById(bodyId),
-            headerpd = document.getElementById(headerId)
+            headerpd = document.getElementById(headerId),
+            closeChat = document.getElementById("close-chat")
 
         // Validate that all variables exist
         if (toggle && nav && bodypd && headerpd) {
             const toggleFunc = () => {
                 // show navbar
+                document.getElementById("invisible-toggle-div").classList.toggle('invisible');
                 nav.classList.toggle('invisible');
                 nav.classList.toggle('show-right-nav');
                     // change icon
@@ -58,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 headerpd.classList.toggle('body-chat-pd');
             }
             toggle.addEventListener('click', toggleFunc);
+            closeChat.addEventListener('click', toggleFunc);
         }
         
     }

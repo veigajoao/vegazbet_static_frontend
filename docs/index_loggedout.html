@@ -48,26 +48,32 @@
         </nav>
     </div>
     <div class="r-navbar invisible" id="nav-bar-chat">
-        <nav class="nav">
-            <div>
-                <div class="nav_list">
-                    <!-- <a href="#" class="nav_logo"> <img src="./img/Logo Vegaz Bet MOEDA.png" width="30px" alt="" /> <span class="nav_logo-name"><img src="./img/Logo Vegaz Bet ESCRITA.png" width="100px" alt=""/></span> </a> -->
-                    <a href="#" class="nav_link active"> <i class="fas fa-chart-line nav_icon secondary-bs-color"></i> <span class="nav_name">Crash</span> </a>
-                    <a href="#" class="nav_link"> <i class="far fa-life-ring nav_icon secondary-bs-color"></i> <span class="nav_name">Roullete</span> </a>
-                    <a href="#" class="nav_link"> <i class="fas fa-dice nav_icon secondary-bs-color"></i> <span class="nav_name">Dice</span> </a>
-                    <a href="#" class="nav_link"> <i class="fas fa-coins nav_icon secondary-bs-color"></i> <span class="nav_name">Heads or Tails</span> </a>
-                    <hr class="bg-white border-2 border-top border-white">
-                    <a href="#" class="nav_link"> <i class="fas fa-hand-holding-usd nav_icon white-bs-color"></i> <span class="nav_name">Deposit /<br> Withdrawal</span> </a>
-                    <a href="#" class="nav_link"> <i class="far fa-question-circle nav_icon white-bs-color"></i> <span class="nav_name">Help</span> </a>
+        <div id="invisible-toggle-div" class="invisible">
+            <button id="close-chat" type="button" class="position-absolute top-8 start-10 btn-close btn-close-white" aria-label="Close"></button>
+            <button type="button" class="position-absolute top-8 end-10 white-bs-color fw-bold btn btn-primary"><span class="text-nowrap">Vegaz Chat</span></button>
+            
+            <div class="bg-primary text-center position-absolute bottom-1 end-2 w-96 h-5">
+                <div class="input-group mb-3">
+                    <input type="text" class="chat-font form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="chat-font btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
                 </div>
             </div>
-        </nav>
+
+            <!-- <div id="chatDisplay" class="d-flex flex-column bd-highlight position-absolute top-10 w-100 h-25">
+                <div id="chatContainer" class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight bg-grey">Flex item 1</div>
+                    <div class="p-2 bd-highlight bg-grey">Flex item 2</div>
+                    <div class="p-2 bd-highlight bg-grey">Flex item 3</div>
+                </div>
+            </div> -->
+            
+        </div>
     </div>
     <!--Container Main start-->
     <div class="height-100">
         <h4>Main Components</h4>
 
-        <a class="position-absolute bottom-5 end-50 float-icon-chat" id="chatButton" role="button">
+        <a class="position-absolute bottom-5 end-5 float-icon-chat" id="chatButton" role="button">
             <i class="far fa-comment-dots"></i>
         </a>
     </div>

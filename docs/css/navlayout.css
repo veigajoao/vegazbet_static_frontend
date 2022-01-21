@@ -3,10 +3,10 @@
     --top-header-top-position: 5%;
     --header-height: 3rem;
     --nav-width: 68px;
-    --chat-width: 68px;
+    --chat-width: 100px;
     --primary-color: var(--bs-primary);
     --secondary-color: var(--bs-secondary);
-    --white-color: #FFFFFF;
+    --white-color: var(--bs-white);
     --body-font: 'Montserrat', sans-serif;
     --normal-font-size: 1rem;
     --z-fixed: 100;
@@ -84,8 +84,8 @@
 .r-navbar {
     position: fixed;
     top: 0;
-    right: 0%;
-    width: var(--chat-width);
+    right: -10%;
+    width: 0;
     height: 100vh;
     background-color: var(--primary-color);
     padding: 1rem 0 0 1rem;
@@ -166,6 +166,10 @@
     padding-right: calc(var(--chat-width) + 1rem);
 }
 
+.chat-font {
+    font-size: small;
+}
+
 .active {
     color: var(--white-color)
 }
@@ -214,18 +218,18 @@
     .r-navbar {
         right: 0;
         padding: 1rem 0 0 1rem;
-        width: var(--chat-width);
+        width: 0;
     }
     .show-left-nav {
         width: calc(var(--nav-width) + 156px)
     }
     .show-right-nav {
-        width: calc(var(--nav-width) + 156px)
+        width: calc(var(--chat-width) + 156px)
     }
     .body-menu-pd {
         padding-left: calc(var(--nav-width) + 188px);   
     }
     .body-chat-pd {
-        padding-right: calc(var(--nav-width) + 156px)
+        padding-right: calc(var(--chat-width) + 156px)
     }
 }
