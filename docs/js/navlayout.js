@@ -12,11 +12,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
             toggleup.addEventListener('click', () => {
                 // show navbar
                 nav.classList.toggle('show-left-nav');
-                    // change icon
+                //hide navbar buttons on sm
+                document.getElementById("nav-buttons").classList.toggle('d-none');
+                // change icon
                 toggle.classList.toggle('fa-times');
-                    // add padding to body
+                // add padding to body
                 bodypd.classList.toggle('body-menu-pd');
-                    // add padding to header
+                // add padding to header
                 headerpd.classList.toggle('body-menu-pd');
             });
         }
@@ -52,11 +54,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 document.getElementById("invisible-toggle-div").classList.toggle('invisible');
                 nav.classList.toggle('invisible');
                 nav.classList.toggle('show-right-nav');
-                    // change icon
+                
+                // change icon
                 toggle.classList.toggle('invisible');
-                    // add padding to body
+                // add padding to body
                 bodypd.classList.toggle('body-chat-pd');
-                    // add padding to header
+                // add padding to header
                 headerpd.classList.toggle('body-chat-pd');
             }
             toggle.addEventListener('click', toggleFunc);
