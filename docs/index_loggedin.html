@@ -19,8 +19,7 @@
     <title>Vegaz.bet</title>
 </head>
 
-<body id="body-pd" style="background: url('./img/Home e Roleta.png') no-repeat center center fixed; background-size: cover;">
-    <div id="color-overlay"></div>
+<body id="body-pd" style="background: url('./img/Home e Roleta.png') no-repeat center center fixed; background-size: cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);">
     <header class="top-header align-middle">
         <div class="mx-auto"></div>
     </header>
@@ -29,11 +28,11 @@
         <div class="d-flex">
             <div class="header_toggle me-3" id="toggle-up"> <i class="fas fa-bars secondary-bs-color" id="header-toggle"></i></div>
             <img style="width: 50px;" class="h-auto me-1 d-none d-sm-flex" src="./img/Logo Vegaz Bet MOEDA.png" alt="">
-            <img style="width: 120px;" class="h-auto d-none d-sm-flex" src="./img/Logo Vegaz Bet ESCRITA.png" alt="">
+            <img style="width: 120px;" class="h-auto d-flex" src="./img/Logo Vegaz Bet ESCRITA.png" alt="">
         </div>
 
-        <div id="nav-buttons" class="me-5 d-sm-flex">
-
+        <div id="nav-buttons" class="d-flex">
+            
             <div class="container me-2 d-none d-sm-block">
                 <div class="row">
                     <span class="text-white text-end">Level 1</span>
@@ -43,11 +42,23 @@
                 </div>
             </div>
 
-            <div class="d-sm-flex d-none">
-                <button class="btn btn-primary-outline me-2"><i class="far fa-envelope fa-lg text-field-grey"></i></button>
-            </div>
+            <button class="btn btn-primary-outline me-2"><i class="far fa-envelope fa-lg text-field-grey"></i></button>
         
-            <button class="btn btn-primary-outline me-2"><i class="fas fa-user fa-lg text-field-grey"></i></button>
+            <div class="dropdown me-2">
+                <button class="btn btn-primary-outline" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user fa-lg text-field-grey"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end bg-field-grey-transparency" aria-labelledby="dropdownMenuUser">
+                  <li><a class="coin-dropdown-item dropdown-item" href="#"><i class="far fa-user"></i>  <span>Account</span></a></li>
+                  <li><a class="coin-dropdown-item dropdown-item" href="#"><i class="fas fa-hand-holding-usd"></i>  <span>Deposit / Withdrawal</span></a></li>
+                  <li><a class="coin-dropdown-item dropdown-item" href="#"><i class="fas fa-history"></i>  <span>Transaction history</span></a></li>
+                  <li><a class="coin-dropdown-item dropdown-item" href="#"><i class="far fa-question-circle"></i> <span>Help</span></a></li>
+                  <li><a class="coin-dropdown-item dropdown-item" href="#"><i class="fas fa-users"></i>  <span>Invite friends</span></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="coin-dropdown-item dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>  <span>Logout</span></a></li>
+
+                </ul>
+            </div>
 
             <div class="dropdown me-2">
                 <button class="border border-field-grey btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -62,6 +73,7 @@
             </div>
 
             <a type="button" class="white-bs-color fw-bold btn btn-secondary d-none d-sm-flex">Deposit</a>
+
         </div>
     </header>
     <div class="l-navbar" id="nav-bar">
@@ -123,13 +135,28 @@
 
     </div>
     <!--Container Main start-->
-    <div class="height-100">
-        <h4>Main Components</h4>
+    <div class="height-100 main-container-page">
+        
+        <div class="container">
 
-        <a class="position-absolute bottom-5 end-5 float-icon-chat" id="chatButton" role="button">
-            <span class="position-absolute top-15 start-20"><i class="far fa-comment-dots" style="font-size: 40px;"></i></span>
-        </a>
+            <div class="row">
+                <div class="col-12 bg-transparent text-center">
+                    <span class="text-white fw-bold">Welcome to</span>
+                    <br>
+                    <img class="w-50 h-auto" src="./img/logo com sombra roxa.png" alt="Vegazbet logo">
+                </div>
+                <div class="col-12 bg-transparent text-center mt-3">
+                    <a class="btn btn-secondary">Let's play!</a>
+                </div>
+            </div>
+
+        </div>
+
     </div>
+
+    <a class="position-absolute bottom-5 end-5 float-icon-chat" id="chatButton" role="button">
+        <span class="position-absolute top-15 start-20"><i class="far fa-comment-dots" style="font-size: 40px;"></i></span>
+    </a>
     <!--Container Main end-->
 
     <!-- Login modal -->
@@ -146,7 +173,7 @@
                 <div class="modal-body">
                     <div class="d-flex flex-column bd-highlight">
                         <div class="text-center p-2 bd-highlight">
-                            <img src="" alt="Logo Vegaz">
+                            <img class="w-20 h-auto" src="./img/logo popoup.png" alt="Logo Vegaz">
                         </div>
                         <div class="text-center fw-bold p-2 bd-highlight">
                             Login to Vegaz
@@ -180,7 +207,7 @@
                 <div class="modal-body">
                     <div class="d-flex flex-column bd-highlight mb-3">
                         <div class="text-center p-2 bd-highlight">
-                            <img src="" alt="Logo Vegaz">
+                            <img class="w-20 h-auto" src="./img/logo popoup.png" alt="Logo Vegaz">
                         </div>
                         <div class="text-center fw-bold p-2 bd-highlight">
                             We'll send you an email with instructions to recover your account
@@ -210,7 +237,7 @@
                 <div class="modal-body">
                     <div class="d-flex flex-column bd-highlight mb-3">
                         <div class="text-center p-2 bd-highlight">
-                            <img src="" alt="Logo Vegaz">
+                            <img class="w-20 h-auto" src="./img/logo popoup.png" alt="Logo Vegaz">
                         </div>
                         <div class="text-center p-2 bd-highlight">
                             You'll receive an email shortly with instructions to recover your password. Check your inbox!
@@ -238,7 +265,7 @@
                 <div class="modal-body">
                     <div class="d-flex flex-column bd-highlight mb-3">
                         <div class="text-center p-2 bd-highlight">
-                            <img src="" alt="Logo Vegaz">
+                            <img class="w-20 h-auto" src="./img/logo popoup.png" alt="Logo Vegaz">
                         </div>
                         <div class="text-center fw-bold p-2 bd-highlight">
                             Create your Vegaz account
@@ -271,7 +298,7 @@
                 <div class="modal-body">
                     <div class="d-flex flex-column bd-highlight mb-3">
                         <div class="text-center p-2 bd-highlight">
-                            <img src="" alt="Logo Vegaz">
+                            <img class="w-20 h-auto" src="./img/logo popoup.png" alt="Logo Vegaz">
                         </div>
                         <div class="text-center p-2 bd-highlight">
                             You're now part of the best online gaming casino community!
