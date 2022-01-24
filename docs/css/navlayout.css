@@ -267,3 +267,48 @@
         padding-right: calc(var(--chat-width) + 156px)
     }
 }
+
+/* Media queries for conditional borders on games */
+.game-col {
+    border-left: none;
+}
+
+.game-block {
+    border-bottom: none;
+}
+
+.game-top {
+    border-top: 1px solid var(--white-color);
+}
+
+@media (min-width: 576px) { 
+    .game-col {
+        border-left: 1px solid var(--white-color);
+    }
+    
+    .game-block {
+        border-bottom: 1px solid var(--white-color);
+    }    
+    .game-top {
+        border-top: none;
+    }
+}
+
+/* crash game */
+.crash-canvas {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 7px;
+    background-color: #0f1923;
+    margin: 0rem auto 2rem auto;
+}
+
+/* betting menu */
+.bet-menu-buttons {
+    width: 7vh;
+    height: 7vh;
+}
+
+.bettor-table-item {
+    border-bottom: 1px solid var(--white-color);
+}

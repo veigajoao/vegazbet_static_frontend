@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 nav.classList.toggle('show-left-nav');
                 //hide navbar buttons on sm
                 document.getElementById("nav-buttons").classList.toggle('d-none');
+                document.getElementById("nav-buttons").classList.toggle('d-sm-flex');
+                document.getElementById("nav-buttons").classList.toggle('d-flex');
                 // change icon
                 toggle.classList.toggle('fa-times');
                 // add padding to body
