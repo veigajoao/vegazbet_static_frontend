@@ -296,12 +296,14 @@
 
 /* crash game */
 .crash-canvas {
+    height: 90%;
     width: 100%;
     max-width: 750px;
     border-radius: 7px;
     background-color: #0f1923;
     margin: 0rem auto 2rem auto;
 }
+
 
 /* betting menu */
 .bet-menu-buttons {
@@ -311,4 +313,19 @@
 
 .bettor-table-item {
     border-bottom: 1px solid var(--white-color);
+}
+
+
+/* pre-footer */
+.pre-footer {
+    height: 700px;
+}
+
+@media (min-width: 576px) {  
+    .pre-footer {
+        height: 200px;
+    }
+    .footer-padding {
+        padding-left: var(--nav-width);
+    }
 }

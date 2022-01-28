@@ -56,40 +56,6 @@ li {
   color: #262833;
 }
 
-
-.roulette-list-past {
-  padding-left: 0;
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 0;
-}
-
-.roulette-list-past li {
-  border-radius: 0.8rem;
-  width: 40px;
-  height: 40px;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  color: rgba(255, 255, 255, 0.5);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.roulette-list-past li:nth-child(even) {
-  background-color: #262833;
-  color: #fff;
-}
-
-.roulette-list-past li:nth-child(odd) {
-  background-color: #b927ad;
-  color: #262833;
-}
-
-
 .vegaz-roulette {
   background-image: url("../img/vegaz-roulette.png") !important; 
   background-position: center !important;
@@ -142,4 +108,59 @@ li {
   75% {
     transform: scale(1.2);
   }
+}
+
+/* past games boxes */
+.roulette-result-even {
+  border-radius: 0.8rem;
+  width: 55px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 25px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #262833;
+  color: #fff;
+}
+
+.roulette-result-odd {
+  border-radius: 0.8rem;
+  width: 55px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 25px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #b927ad;
+  color: #262833;
+}
+
+.roulette-result-vegaz-roulette {
+  border-radius: 0.8rem;
+  width: 55px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 25px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../img/vegaz-roulette.png") !important; 
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-color: #fff !important;
 }
