@@ -164,3 +164,61 @@ li {
   background-repeat: no-repeat !important;
   background-color: #fff !important;
 }
+
+
+/* betting buttons */
+.roulette-betting-even {
+  border-radius: 0.8rem;
+  border-color: var(--white-color);
+  width: 82.5px;
+  height: 75px;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 25px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #262833;
+  color: #fff;
+}
+
+.roulette-betting-odd {
+  border-radius: 0.8rem;
+  border-color: var(--white-color);
+  width: 82.5px;
+  height: 75px;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 25px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #b927ad;
+  color: #262833;
+}
+
+.roulette-betting-vegaz {
+  border-radius: 0.8rem;
+  border-color: var(--white-color);
+  width: 82.5px;
+  height: 75px;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #b927ad;
+  margin: 0 25px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-color: #fff !important;
+}

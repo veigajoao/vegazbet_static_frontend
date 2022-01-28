@@ -307,8 +307,19 @@
 
 /* betting menu */
 .bet-menu-buttons {
-    width: 7vh;
-    height: 7vh;
+    border-radius: 0.8rem;
+    width: 55px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #262833;
+    color: #fff;
 }
 
 .bettor-table-item {
