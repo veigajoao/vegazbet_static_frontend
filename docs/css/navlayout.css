@@ -1,18 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.gstatic.com/s/arimo/v17/P5sfzZCDf9_T_3cV7NCUECyoxNk37cxcDRrBZQI.woff2");
+
 :root {
-    --top-header-top-position: 1.5rem;
-    --header-height: 3rem;
-    --nav-width: 68px;
+    --top-header-top-position: 0rem;
+    --header-height: 3.5rem;
+    --nav-width: 100px;
     --chat-width: 100px;
     --primary-color: var(--bs-primary);
     --secondary-color: var(--bs-secondary);
     --field-gray: var(--bs-field-grey);
     --field-grey-transparency: var(--bs-field-grey-transparency);
     --white-color: var(--bs-white);
-    --body-font: 'Montserrat', sans-serif;
+    --body-font: 'Arimo', sans-serif;
     --normal-font-size: 1rem;
-    --z-fixed: 100;
-    --z-topbar: 101;
+    --z-fixed: 50;
+    --z-chat: 50;
+    --z-topbar: 51;
 }
 
 *,
@@ -20,6 +23,14 @@
 ::after {
     box-sizing: border-box
 }
+
+.modal-backdrop {
+    z-index: 100000 !important;
+  }
+
+  .modal {
+    z-index: 100001 !important;
+  }
 
 .top-header {
     width: 100%;
@@ -76,6 +87,10 @@
     width: 40px
 }
 
+#account-icon:hover {
+    color: var(--white-color);
+}
+
 .l-navbar {
     position: fixed;
     top: 0;
@@ -97,7 +112,7 @@
     background-color: var(--primary-color);
     padding: 1rem 0 0 1rem;
     transition: .5s;
-    z-index: var(--z-fixed);
+    z-index: 5000;
     padding: 1rem 0 0 1rem;
 }
 
@@ -116,7 +131,7 @@
     grid-template-columns: max-content max-content;
     align-items: center;
     column-gap: 1rem;
-    padding: .5rem 0 .5rem 1.5rem;
+    padding: .5rem 0 1.5rem 1.5rem;
     text-decoration: none;
 }
 
@@ -137,16 +152,23 @@
 .nav_link {
     position: relative;
     color: var(--white-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
     transition: .3s
 }
 
 .nav_link:hover {
-    color: var(--white-color)
+    color: var(--secondary-color) !important;
+
 }
 
 .nav_icon {
-    font-size: 1.25rem;
+    margin-left: -1rem;
+    font-size: 1.2rem;
+}
+
+.nav_name {
+    margin-left: -0.5rem;
+    font-size: 1rem;
 }
 
 .secondary-bs-color {
@@ -164,10 +186,6 @@
 
 .show-right-nav {
     width: 100%;
-}
-
-.body-menu-pd {
-    padding-left: calc(var(--nav-width) + 188px); 
 }
 
 .body-chat-pd {
@@ -194,7 +212,8 @@
 }
 
 .active {
-    color: var(--white-color)
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 .active::before {
@@ -203,7 +222,7 @@
     left: 0;
     width: 2px;
     height: 32px;
-    background-color: var(--white-color)
+    background-color: var(--secondary-color)
 }
 
 .height-100 {
@@ -236,7 +255,8 @@
 @media screen and (min-width: 768px) {
     .header {
         height: calc(var(--header-height) + 1rem);
-        padding: 0 2rem 0 calc(var(--nav-width) + 2rem)
+        padding: 0 2rem 0 1.5rem;
+        z-index: 5000;
     }
     .header_img {
         width: 40px;
@@ -259,9 +279,6 @@
     }
     .show-right-nav {
         width: calc(var(--chat-width) + 156px)
-    }
-    .body-menu-pd {
-        padding-left: calc(var(--nav-width) + 188px);   
     }
     .body-chat-pd {
         padding-right: calc(var(--chat-width) + 156px)

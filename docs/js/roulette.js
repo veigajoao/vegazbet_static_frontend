@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $(".roulette-list li").clone().appendTo(".roulette-list");
   }
 
-  $(".button").click(() => {
+  $("#login_but").click(() => {
     const sortedNumber = Math.floor(Math.random() * LIST_NUMBER) + 1;
     handleRoulette(sortedNumber);
   });

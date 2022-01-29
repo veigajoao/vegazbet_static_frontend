@@ -3,10 +3,10 @@
 
 // Include any default variable overrides here (though functions won't be available)
 // a. Theme colors
-$primary: #121523;
+$primary: #131425;
 $secondary: #85248d;
 $opacity-white: rgba(255, 255, 255, 0.45);
-$field-grey: #6a6a6f;
+$field-grey: #0c0d15;
 $field-grey-transparency: rgba(106, 106, 111, 0.5);
 
 $modal-bg: $primary;
@@ -22,8 +22,9 @@ $theme-colors: (
 
 // b. Standard fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.gstatic.com/s/arimo/v17/P5sfzZCDf9_T_3cV7NCUECyoxNk37cxcDRrBZQI.woff2");
 
-$font-family-base: 'Montserrat', sans-serif;
+$font-family-base: 'Arimo', 'Montserrat', sans-serif;
 
 //c. margin and padding spacers
 $spacer: 1rem;
