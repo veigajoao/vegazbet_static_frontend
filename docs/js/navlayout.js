@@ -12,16 +12,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
             toggleup.addEventListener('click', () => {
                 // show navbar
                 nav.classList.toggle('show-left-nav');
-                //hide navbar buttons on sm
-                document.getElementById("nav-buttons").classList.toggle('d-none');
-                document.getElementById("nav-buttons").classList.toggle('d-sm-flex');
-                document.getElementById("nav-buttons").classList.toggle('d-flex');
+                //show navbar text
+                for (element of document.getElementsByClassName("menu-text") ) {
+                        element.classList.toggle("d-none");
+                }
                 // change icon
                 toggle.classList.toggle('fa-times');
                 // add padding to body
                 bodypd.classList.toggle('body-menu-pd');
                 // add padding to header
-                headerpd.classList.toggle('body-menu-pd');
+                // headerpd.classList.toggle('body-menu-pd');
             });
         }
         

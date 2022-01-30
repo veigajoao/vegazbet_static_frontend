@@ -1,19 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.gstatic.com/s/arimo/v17/P5sfzZCDf9_T_3cV7NCUECyoxNk37cxcDRrBZQI.woff2");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
 :root {
     --top-header-top-position: 0rem;
     --header-height: 3.5rem;
-    --nav-width: 100px;
+    --nav-width: 68px;
     --chat-width: 100px;
     --primary-color: var(--bs-primary);
     --secondary-color: var(--bs-secondary);
     --field-gray: var(--bs-field-grey);
     --field-grey-transparency: var(--bs-field-grey-transparency);
     --white-color: var(--bs-white);
-    --body-font: 'Arimo', sans-serif;
+    --body-font: 'Arimo', 'Montserrat', sans-serif;
     --normal-font-size: 1rem;
-    --z-fixed: 50;
+    --z-fixed: 51;
+    --z-lnavbar: 50;
     --z-chat: 50;
     --z-topbar: 51;
 }
@@ -100,7 +101,7 @@
     background-color: var(--primary-color);
     padding: .5rem 1rem 0 0;
     transition: .5s;
-    z-index: var(--z-fixed)
+    z-index: var(--z-lnavbar);
 }
 
 .r-navbar {
@@ -131,12 +132,19 @@
     grid-template-columns: max-content max-content;
     align-items: center;
     column-gap: 1rem;
-    padding: .5rem 0 1.5rem 1.5rem;
+    padding: .5rem 0 1.5rem 2rem;
     text-decoration: none;
 }
 
+.nav_link {
+    position: relative;
+    color: var(--white-color);
+    margin-bottom: 0rem;
+    transition: .3s
+}
+
 .nav_logo {
-    margin-bottom: 2rem
+    margin-bottom: 3rem
 }
 
 .nav_logo-icon {
@@ -149,16 +157,8 @@
     font-weight: 700
 }
 
-.nav_link {
-    position: relative;
-    color: var(--white-color);
-    margin-bottom: 0rem;
-    transition: .3s
-}
-
 .nav_link:hover {
     color: var(--secondary-color) !important;
-
 }
 
 .nav_icon {
@@ -256,7 +256,6 @@
     .header {
         height: calc(var(--header-height) + 1rem);
         padding: 0 2rem 0 1.5rem;
-        z-index: 5000;
     }
     .header_img {
         width: 40px;
@@ -275,13 +274,16 @@
         width: 0;
     }
     .show-left-nav {
-        width: calc(var(--nav-width) + 156px)
+        width: calc(var(--nav-width) + 188px)
+    }
+    .body-menu-pd {
+        padding-left: calc(var(--chat-width) + 188px)
     }
     .show-right-nav {
-        width: calc(var(--chat-width) + 156px)
+        width: calc(var(--chat-width) + 188px)
     }
     .body-chat-pd {
-        padding-right: calc(var(--chat-width) + 156px)
+        padding-right: calc(var(--chat-width) + 192px)
     }
 }
 
