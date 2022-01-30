@@ -340,6 +340,21 @@
     color: #fff;
 }
 
+.crash-result {
+    border-radius: 0.8rem;
+    width: 40px;
+    height: 35px;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #262833;
+    color: #fff;
+}
+
 .bettor-table-item {
     border-bottom: 1px solid var(--white-color);
 }
