@@ -329,8 +329,7 @@
     border-radius: 0.8rem;
     width: 55px;
     height: 50px;
-    font-size: 1.5rem;
-    font-weight: bolder;
+    font-size: 1.0rem;
     color: rgba(255, 255, 255, 0.5);
 
     display: flex;
@@ -345,6 +344,33 @@
     border-bottom: 1px solid var(--white-color);
 }
 
+.bet-box1 {
+    border-left: 0.5px solid var(--field-grey-transparency);
+    border-top: 0.5px solid var(--field-grey-transparency);
+    border-right: 0.0px solid var(--field-grey-transparency);
+    border-bottom: 0.5px solid var(--field-grey-transparency);
+}
+
+.bet-box2 {
+    border-left: 0.0px solid var(--field-grey-transparency);
+    border-top: 0.5px solid var(--field-grey-transparency);
+    border-right: 0.0px solid var(--field-grey-transparency);
+    border-bottom: 0.5px solid var(--field-grey-transparency);
+}
+
+.bet-box3 {
+    border-left: 0.5px solid var(--field-grey-transparency);
+    border-top: 0.5px solid var(--field-grey-transparency);
+    border-right: 0.5px solid var(--field-grey-transparency);
+    border-bottom: 0.5px solid var(--field-grey-transparency);
+}
+
+.bet-box3:focus {
+    border-left: 0.5px solid var(--field-grey-transparency);
+    border-top: 0.5px solid var(--field-grey-transparency);
+    border-right: 0.5px solid var(--field-grey-transparency);
+    border-bottom: 0.5px solid var(--field-grey-transparency);
+}
 
 /* pre-footer */
 .pre-footer {

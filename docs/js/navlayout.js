@@ -71,5 +71,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     showChat('chatButton', 'nav-bar-chat', 'body-pd', 'header');
+
+    //border countdown
+    const border = document.getElementById("time-bar");
+    console.log(border);
+    let time = 100
+    const borderProgression = _ => {
+        let strTime = toString(time);
+        border.style["width"] = strTime + "%";
+        time -= 1;
+        console.log(time);
+    }
+    window.setInterval(borderProgression, 1000);
+    
     
 });
