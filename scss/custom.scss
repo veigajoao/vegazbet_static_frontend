@@ -8,6 +8,7 @@ $secondary: #85248d;
 $opacity-white: rgba(255, 255, 255, 0.45);
 $field-grey: #0c0d15;
 $field-grey-transparency: rgba(106, 106, 111, 0.5);
+$bet-list-grey: #bebebe;
 $crash-green: #04d47c;
 
 $modal-bg: $primary;
@@ -20,6 +21,7 @@ $theme-colors: (
   "field-grey-transparency": $field-grey-transparency,
   "opacity-white": $opacity-white,
   "crash-green": $crash-green,
+  "bet-list-grey": $bet-list-grey,
 );
 
 // b. Standard fonts
