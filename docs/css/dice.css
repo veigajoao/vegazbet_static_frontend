@@ -108,7 +108,7 @@
   width: 100%;
   /* border-top: 4px solid #2f2f2f;*/  
   border: 2px solid #525252; 
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   /* filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.3))
     drop-shadow(-3px -3px 0px rgba(0, 0, 0, 0.3)); */
   opacity: 0.99;

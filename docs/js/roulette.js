@@ -1,6 +1,7 @@
 const ANIMATION_TIME = 5000;
 const LIST_NUMBER = 15;
 const ITEM_WIDTH = 82.5;
+const ITEM_MARGIN = 10;
 
 document.addEventListener("DOMContentLoaded", function(event) {
   for (i = 0; i < 3; i++) {
@@ -24,7 +25,7 @@ function handleRoulette(sortedIndex) {
 
   $(".window").animate(
     {
-      right: x * ITEM_WIDTH - ITEM_WIDTH / 2 - LIST_WIDTH / 2,
+      right: x * (ITEM_WIDTH + ITEM_MARGIN) - (ITEM_WIDTH + ITEM_MARGIN) / 2 - LIST_WIDTH / 2,
     },
     ANIMATION_TIME
   );
