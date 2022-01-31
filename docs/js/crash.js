@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+    /// Inicializar o canvas
     const image = new Image();
     image.src = document.getElementById("img-rocket").getAttribute("src");
 
@@ -8,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const canvas = document.getElementById("canvas");
     const context = canvas.getContext("2d");
   
+    /// Cores que serão usadas
     const colors = {
       leftMeasures: "#f00",
       borderColor: "#252e39",
@@ -16,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       textColor: "#fff",
       timerColor: "#1b2430",
       stopColor: "#e82b4a",
+      backgroundColor: ""
     };
   
     const GRAPH_TOP = 50;
@@ -26,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const GRAPH_HEIGHT = 350;
     const GRAPH_WIDTH = 650;
   
+    /// As linhas que começam no gráfico: x1.25, x1.5, x1.75
     const initialLines = () => [
       {
         x1: GRAPH_LEFT,
@@ -65,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let rocket_y = GRAPH_BOTTOM - 10;
     let rocket_x = GRAPH_LEFT + 30;
   
+    /// Linhas que serão desenhadas no gráfico
     const data = [
       2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 40, 50,
       60, 70, 80, 90, 100,
@@ -87,6 +92,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
     function drawLoading(loading) {
       context.clearRect(0, 0, 1000, 1000);
+
+      /// Desenhando o timer
       context.fillStyle = colors.timerColor;
       context.fillRect(
         GRAPH_WIDTH / 10,
@@ -97,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
       context.fillStyle = colors.stopColor;
   
+      /// Desenhando o loading
       const loadingPercent = loading / 500;
       const loadingWidth = (loadingPercent * GRAPH_WIDTH) / 1.18;
   
@@ -106,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       context.font = "500 1rem Segoe UI";
       context.fillText(
         "Começando em " + (loading / 100).toFixed(1).toString() + "s",
-        GRAPH_WIDTH / 2.5,
+        GRAPH_WIDTH / 2,
         (GRAPH_HEIGHT + 60) / 2
       );
   
@@ -114,10 +122,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   
     function drawGraph() {
-      console.log(GRAPH_TOP);
       if (game.status === "loading") return handleLoading();
-      // else if (game.status === "paused")
-      //   return window.requestAnimationFrame(drawGraph);
   
       context.clearRect(0, 0, 1000, 1000);
   
@@ -129,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       context.textAlign = "center";
       context.setLineDash([6, 5]);
   
+      /// Desenhando as linhas
       for (let line of game.lines) {
         context.beginPath();
         context.strokeStyle = colors.borderColor;
@@ -163,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       context.strokeStyle = colors.borderColor;
       context.moveTo(GRAPH_LEFT - 10, GRAPH_BOTTOM);
       context.lineTo(GRAPH_RIGHT, GRAPH_BOTTOM);
-      // context.lineTo(GRAPH_RIGHT + 25, GRAPH_TOP);
+
       context.fillText("1x", GRAPH_LEFT - 30, GRAPH_BOTTOM + 2);
       context.stroke();
   
@@ -173,6 +179,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       context.lineJoin = "round";
       context.strokeStyle = colors.rocketLineColor;
   
+      /// Aumenta a posição x e y do foguete
       if (game.status === "running") {
         if (rocket_y > GRAPH_TOP) rocket_y -= 0.5 * 1.2;
         if (rocket_x < GRAPH_RIGHT) rocket_x += 1 * 1.2;
@@ -191,11 +198,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         rocket_y
       );
   
-      // context.fillText(i + 1, (GRAPH_RIGHT / arrayLen) * i, GRAPH_BOTTOM + 25);
-  
       context.stroke();
-  
-      console.log(game.status);
+
       if (game.status === "running")
         context.drawImage(image, rocket_x - 45, rocket_y - 30, 70, 70);
       else context.drawImage(explosion, rocket_x - 45, rocket_y - 30, 70, 70);
@@ -211,8 +215,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       window.requestAnimationFrame(drawGraph);
     }
   
-    // startGame();
-  
     window.requestAnimationFrame(drawGraph);
     const defeatTime = Math.floor(Math.random() * (20000 - 5000 + 1)) + 5000;
     setTimeout(stopGame, defeatTime);
@@ -225,14 +227,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       rocket_y = GRAPH_BOTTOM;
       rocket_x = GRAPH_LEFT;
   
-      console.log(game);
-  
       window.requestAnimationFrame(drawGraph);
   
       const defeatTime = Math.floor(Math.random() * (20000 - 5000 + 1)) + 5000;
       setTimeout(stopGame, defeatTime);
     }
-    // });
   
     function drawText(text, bgColor, fontColor) {
       context.fillStyle = bgColor;
@@ -257,7 +256,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
     function handleTimer() {
       const formatedTimer = Number(timer.toFixed(2));
-      console.log(formatedTimer);
       data.includes(formatedTimer) ? drawLine("x" + formatedTimer) : null;
   
       timer += 0.0025;
