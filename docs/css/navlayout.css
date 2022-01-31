@@ -72,7 +72,7 @@
 .header_toggle {
     color: var(--primary-color);
     font-size: 1.5rem;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .header_img {
