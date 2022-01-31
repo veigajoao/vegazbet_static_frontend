@@ -8,13 +8,13 @@
 
     <link href="./css/custom.css" rel="stylesheet">
     <link href="./css/navlayout.css" rel="stylesheet">
-    <link href="./css/coin.css" rel="stylesheet">
+    <link href="./css/roulette.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
 
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script defer src="./js/navlayout.js"></script>
-    <script defer src="./js/coin.js"></script>
+    <script defer src="./js/roulette.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 
     <link rel="icon" href="./img/icon.png" />
@@ -175,13 +175,20 @@
 
                     <div class="d-block flex-column justify-content-center align-items-start mb-3 pb-3">
                         <span class="text-white fw-bold">
-                            Select your side
+                            Select your color
                         </span>
                     </div>
 
-                    <div class="d-block justify-content-arround h-100 w-100 mb-3 pb-3">
-                        <img class="coin-bet-button ps-2 pe-2" src="./img/coin1.png" alt="coin1">
-                        <img class="coin-bet-button ps-2 pe-2" src="./img/coin2.png" alt="coin2">
+                    <div class="d-flex justify-content-around mb-3 pb-3">
+                        <div class="bet-menu-buttons bg-secondary text-white border border-field-grey-transparency">
+                            2x
+                        </div>
+                        <div class="bet-menu-buttons bg-white text-secondary border border-field-grey-transparency">
+                            14x
+                        </div>
+                        <div class="bet-menu-buttons bg-primary text-white border border-field-grey-transparency">
+                            2x
+                        </div>
                     </div>
 
                     <div class="d-flex flex-column mb-3 pb-3">
@@ -219,20 +226,26 @@
 
                         <div class="d-flex">
         
-                            <div class="coin" id="coin" data-spin="tails">
-                                <div class="coin__front"></div>
-                                <div class="coin__edge">
-                                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                            <div class="wraper" id="wraper">
+                                <div class="arrowup"></div>
+                                <div class="arrowdown"></div>
+                                <div class="line"></div>
+                                <div class="window" id="window">
+                                    <ul class="roulette-list">
+                                    </ul>
+                                    <ul class="roulette-list">
+                                        <li class="vegaz-roulette"></li>
+                                        <li><span>1</span></li>
+                                        <li><span>2</span></li>
+                                        <li><span>3</span></li>
+                                        <li><span>4</span></li>
+                                        <li><span>5</span></li>
+                                        <li><span>6</span></li>
+                                        <li><span>7</span></li>
+                                        <li><span>8</span></li>
+                                        <li><span>9</span></li>
+                                    </ul>
                                 </div>
-                                <div class="coin__back"></div>
-                                <div class="coin__shadow"></div>
                             </div>
     
                         </div>
@@ -244,15 +257,15 @@
                             Last runs:
                         </div>
                         <div class="d-flex justify-content-start">
-                            <img class="coin-bet-button ps-2 pe-2" src="./img/coin1.png" alt="coin1" style="min-width: 0;">
-                            <img class="coin-bet-button ps-2 pe-2" src="./img/coin2.png" alt="coin2" style="min-width: 0;">
-                            <img class="coin-bet-button ps-2 pe-2" src="./img/coin1.png" alt="coin1" style="min-width: 0;">
-                            <img class="coin-bet-button ps-2 pe-2" src="./img/coin2.png" alt="coin2" style="min-width: 0;">
-                            <img class="coin-bet-button ps-2 pe-2" src="./img/coin1.png" alt="coin1" style="min-width: 0;">
-                            <img class="coin-bet-button ps-2 pe-2" src="./img/coin2.png" alt="coin2" style="min-width: 0;">
-                            <img class="coin-bet-button ps-2 pe-2" src="./img/coin1.png" alt="coin1" style="min-width: 0;">
-                            <img class="coin-bet-button ps-2 pe-2" src="./img/coin2.png" alt="coin2" style="min-width: 0;">
-
+                            <div class="ms-2 bet-menu-buttons bg-secondary text-white border border-field-grey-transparency">2</div>
+                            <div class="ms-2 bet-menu-buttons bg-white text-secondary border border-field-grey-transparency vegaz-roulette"></div>
+                            <div class="ms-2 bet-menu-buttons bg-primary text-white border border-field-grey-transparency">3</div>
+                            <div class="ms-2 bet-menu-buttons bg-secondary text-white border border-field-grey-transparency">2</div>
+                            <div class="ms-2 bet-menu-buttons bg-white text-secondary border border-field-grey-transparency vegaz-roulette"></div>
+                            <div class="ms-2 bet-menu-buttons bg-primary text-white border border-field-grey-transparency">3</div>
+                            <div class="ms-2 bet-menu-buttons bg-secondary text-white border border-field-grey-transparency">2</div>
+                            <div class="ms-2 bet-menu-buttons bg-white text-secondary border border-field-grey-transparency vegaz-roulette"></div>
+                            <div class="ms-2 bet-menu-buttons bg-primary text-white border border-field-grey-transparency">3</div>
                         </div>
                     </div>
 
@@ -262,16 +275,16 @@
             <!-- Row for displaying bets -->
             <div class="row mt-5 pb-5 mb-5 gx-0">
 
-                <div class="col-12 col-sm-5 bg-primary  mt-5">
+                <div class="col-12 col-sm-3 bg-primary  mt-5">
                     <div class="container pt-3 pb-3 ps-3 pe-3">
 
                         <div class="row gx-0 border-bottom border-white border-2 pb-4">
                             <div class="col-4">
-                                <img class="mx-auto d-block w-50" src="./img/coin1.png" alt="heads">
+                                <div class="ms-2 bet-menu-buttons bg-secondary text-white border border-field-grey-transparency">even</div>
                             </div>
                             <div class="col-2"></div>
                             <div class="col-6 align-self-center">
-                                    <div class="text-white" style="font-size: xx-large;"> Win 1.9x</div>
+                                    <div class="text-white" style="font-size: xx-large;"> Win 2x</div>
                             </div>
                         </div>
 
@@ -306,18 +319,64 @@
                     </div>
                 </div>
 
-                <div class="col-sm-2"></div>
+                <div class="col-1"></div>
 
-                <div class="col-12 col-sm-5 bg-primary bg-opacity-50 mt-5">
+                <div class="col-12 col-sm-3 bg-primary  mt-5">
                     <div class="container pt-3 pb-3 ps-3 pe-3">
 
                         <div class="row gx-0 border-bottom border-white border-2 pb-4">
                             <div class="col-4">
-                                <img class="mx-auto d-block w-50" src="./img/coin2.png" alt="heads">
+                                <div class="ms-2 bet-menu-buttons bg-white text-secondary border border-field-grey-transparency vegaz-roulette"></div>
                             </div>
                             <div class="col-2"></div>
                             <div class="col-6 align-self-center">
-                                    <div class="text-white" style="font-size: xx-large;"> Win 1.9x</div>
+                                    <div class="text-white" style="font-size: xx-large;"> Win 14x</div>
+                            </div>
+                        </div>
+
+                        <div class="row gx-0">
+                            <div class="col-12 mt-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-block">
+                                        <span class="text-white">Total bets</span>
+                                    </div>
+                                    <div class="d-block">
+                                        <div class="text-white" style="font-size: larger;"><span class="fw-bold">0 TC</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row gx-0 bg-secondary mt-3">
+                            <div class="col-8 text-left text-white ps-3">User</div>
+                            <div class="col-4 text-center text-white">Bet</div>
+                        </div>
+
+                        <div class="row gx-0 pt-2 pb-2 ">
+                            <div class="col-8 text-left text-white ps-3">Elon Musk</div>
+                            <div class="col-4 text-center text-white">270 TC</div>
+                        </div>
+
+                        <div class="row gx-0 pt-2 pb-2 ">
+                            <div class="col-8 text-left text-white ps-3">Tony Ramos</div>
+                            <div class="col-4 text-center text-white">135 TC</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-1"></div>
+
+                <div class="col-12 col-sm-3 bg-primary  mt-5">
+                    <div class="container pt-3 pb-3 ps-3 pe-3">
+
+                        <div class="row gx-0 border-bottom border-white border-2 pb-4">
+                            <div class="col-4">
+                                <div class="ms-2 bet-menu-buttons bg-primary text-white border border-field-grey-transparency">odd</div>
+                            </div>
+                            <div class="col-2"></div>
+                            <div class="col-6 align-self-center">
+                                    <div class="text-white" style="font-size: xx-large;"> Win 2x</div>
                             </div>
                         </div>
 
