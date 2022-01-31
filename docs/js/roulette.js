@@ -1,6 +1,6 @@
 const ANIMATION_TIME = 5000;
-const LIST_NUMBER = 10;
-const ITEM_WIDTH = 135;
+const LIST_NUMBER = 15;
+const ITEM_WIDTH = 82.5;
 
 document.addEventListener("DOMContentLoaded", function(event) {
   for (i = 0; i < 3; i++) {
