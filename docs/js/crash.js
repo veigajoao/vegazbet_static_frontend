@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
     /// Cores que serão usadas
     const colors = {
-      leftMeasures: "#f00",
-      borderColor: "#252e39",
+      leftMeasures: "#fff",
+      borderColor: "#fff",
       rocketLineColor: "#9c3d92",
-      fontColor: "#51596a",
+      fontColor: "#fff",
       textColor: "#fff",
       timerColor: "#1b2430",
       stopColor: "#e82b4a",

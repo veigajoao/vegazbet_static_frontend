@@ -319,7 +319,7 @@
     width: 100%;
     max-width: 750px;
     border-radius: 7px;
-    background-color: #0f1923;
+    /* background-color: #0f1923; */
     margin: 0rem auto 2rem auto;
 }
 
