@@ -65,27 +65,27 @@
 }
 
 .die-item[data-side="1"] {
-  background-image: url("../img/dice1.png");
+  background-image: url("../img/dado.png");
 }
 
 .die-item[data-side="2"] {
-  background-image: url("../img/dice2.png");
+  background-image: url("../img/dado.png");
 }	
 
 .die-item[data-side="3"] {
-  background-image: url("../img/dice3.png");
+  background-image: url("../img/dado.png");
 }
 
 .die-item[data-side="4"] {
-  background-image: url("../img/dice4.png");
+  background-image: url("../img/dado.png");
 }	
 
 .die-item[data-side="5"] {
-  background-image: url("../img/dice5.png");
+  background-image: url("../img/dado.png");
 }
 
 .die-item[data-side="6"] {
-  background-image: url("../img/dice6.png");
+  background-image: url("../img/dado.png");
 }
 
 .die-item {

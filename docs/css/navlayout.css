@@ -387,15 +387,7 @@
     border-bottom: 0.5px solid var(--field-grey-transparency);
 }
 
-/* pre-footer */
-.pre-footer {
-    height: 700px;
-}
-
 @media (min-width: 576px) {  
-    .pre-footer {
-        height: 200px;
-    }
     .footer-padding {
         padding-left: var(--nav-width);
     }
