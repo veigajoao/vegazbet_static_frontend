@@ -137,18 +137,95 @@
 
     </div>
     <!--Container Main start-->
-    <div class="height-100 main-container-page">
+    <div class="height-200 main-container-page">
         
-        <div class="container pt-5 mt-5">
+        <div class="container">
 
             <div class="row">
-                <div class="col-12 bg-transparent text-center">
-                    <span class="text-white fw-bold">Welcome to</span>
-                    <br>
-                    <img class="w-50 h-auto" src="./img/logo com sombra roxa.png" alt="Vegazbet logo">
+                <div class="col-12">
+                    <div class="card bg-transparent text-white border-0">
+                        <div class="card-header border-0">
+                            <h3>Validate your character</h3>
+                        </div>
+                        <div class="card-body border-0">
+                            <p class="card-text">
+                                In order to be able to deposit and/or withdrawal Tibia coins
+                                tou'll need to validate your character.
+                                <br>
+                                To do so, simply paste the following code in your character's 
+                                description, insert the character's name in the bellow box and 
+                                click the "validate" button
+                            </p>
+                            <div class="input-group mb-4 w-50">
+                                <span class="bet-box1 bg-primary text-white input-group-text">code</span>
+                                <input readonly type="text" class="bet-box3 bg-primary text-white form-control" value="ABDFGB32t465BERBREBA57575">
+                            </div>
+                            <div class="input-group mb-4 w-50">
+                                <span class="bet-box1 bg-primary text-white input-group-text">Char name</span>
+                                <input type="text" class="bet-box3 bg-primary text-white form-control">
+                            </div>
+                            <a href="#" class="btn btn-secondary">Validate Character</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 bg-transparent text-center mt-3">
-                    <a class="btn btn-secondary">Let's play!</a>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card bg-transparent text-white border-0">
+                        <div class="card-header border-0">
+                            <h3>Deposit Tibia Coins</h3>
+                        </div>
+                        <div class="card-body border-0">
+                            <p class="card-text">
+                                In order to deposit tibia coins to Vegaz.bet, you'll need to transfer
+                                tibia coins in the game to our banker character using one of your verified
+                                chars.
+                                <br>
+                                Send the funds to the character with the following name, the funds will appear
+                                in your Vegaz.bet account in up to 30 minutes.
+                                <br>
+                                ***Funds must be sent from a verified character, otherwise, they won't be 
+                                credited to your account. In case you wrongly make a deposit from a non-verified
+                                char, just verify it and the funds will appear in your account.
+                            </p>
+                            <div class="input-group mb-4 w-50">
+                                <span class="bet-box1 bg-primary text-white input-group-text">banker name</span>
+                                <input readonly type="text" class="bet-box3 bg-primary text-white form-control" value="vegaz_banker_name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card bg-transparent text-white border-0">
+                        <div class="card-header border-0">
+                            <h3>Withdrawal Tibia Coins</h3>
+                        </div>
+                        <div class="card-body border-0">
+                            <p class="card-text">
+                                In order to withdrawal Tibia Coins from your Vegaz.bet account, you'll
+                                need to select an ammount of Tibia Coins to withdrawal (must be a multiple of 25
+                                because of the game's transfer mechanic) and select one of your validated characters
+                                to receive the funds.
+                                <br>
+                                The funds will be sent to your char in up to 24 hours.
+                            </p>
+                            <div class="input-group mb-4 w-50">
+                                <span class="bet-box1 bg-primary text-white input-group-text">Withdrawal quantity</span>
+                                <input readonly type="text" class="bet-box3 bg-primary text-white form-control" placeholder="Quantity of TC (must be multiple of 25)">
+                            </div>
+                            <select class="form-select bg-primary text-white mb-4 w-50" aria-label="Default select example">
+                                <option selected>Select your char</option>
+                                <option value="1">Char 1</option>
+                                <option value="2">Char 2</option>
+                                <option value="3">Char 3</option>
+                            </select>
+                            <a href="#" class="btn btn-secondary">Withdrawal</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
