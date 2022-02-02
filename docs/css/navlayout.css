@@ -392,3 +392,8 @@
         padding-left: var(--nav-width);
     }
 }
+
+/* time bar */
+.time-bar {
+    height: 22px;
+}
